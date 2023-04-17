@@ -137,7 +137,7 @@ public:
     auto buscarLivros = [&](const string& termo) {
         tabelaLivros->limpar();
         auto cursor = collection.find(
-            document{} << "$or" << bsoncxx::builder::stream::array{ 
+            document{} << "$or" << bsoncxx::builder::stream::array{
                 bsoncxx::builder::stream::document{} << "titulo" << bsoncxx::builder::stream::open_document
                     << "$regex" << termo << bsoncxx::builder::stream::close_document << finalize,
                 bsoncxx::builder::stream::document{} << "autor" << bsoncxx::builder::stream::open_document

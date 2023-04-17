@@ -1,0 +1,10 @@
+{
+   "files.associations": {
+      "iostream": "cpp",
+      "string": "cpp",
+      "qvboxlayout": "cpp",
+      "qhboxlayout": "cpp",
+      "qmessagebox": "cpp",
+      "qpushbutton": "cpp"
+   }
+}
